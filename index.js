@@ -42,7 +42,7 @@ app.post("/", async function (req, res) {
     let lang = objUsers[session.session_id].lang;
 
     let data = JSON.stringify({
-      folderId: "b1g7n8cobqpioi1lu5kr",
+      folderId: "your folderId here",
       texts: userText,
       targetLanguageCode: lang,
     });
@@ -53,7 +53,7 @@ app.post("/", async function (req, res) {
       url: "https://translate.api.cloud.yandex.net/translate/v2/translate",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Api-Key AQVNxyBAOGy0XVFNsGQYsvwKuUT6Oq9y8cYl2P3x",
+        Authorization: "Api-Key your API key here",
       },
       data: data,
     };
